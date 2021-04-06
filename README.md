@@ -13,7 +13,6 @@ If you already have your tools setup you can skip this part.
 
 First, you need to set up your different development tools:
  - Create Github Repository
- - Create Pivotal Project
  - Add GitHub Repository to Travis-CI and configure a simple workflow ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/Travis.md))
  - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/Heroku.md))
 
@@ -26,10 +25,6 @@ The Governify auditor should be present on the private tools in order to have ac
 
 ![GH invite](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/auditor1.PNG?raw=true)
 
- - Pivotal Tracker: If your repository is public you don't need to add the auditor. If not, go to your project, click on members at the top and click on `Invite people`. Enter governify.auditor@gmail.com and add him.
-
-![PT invite](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/auditor2.PNG?raw=true)
-
  - Heroku: You'll need to add the auditor as a collaborator. On your app dashboard view, click on `Access` at the top and then `Add collaborator`. Enter governify.auditor@gmail.com and save changes.
 
 ![H invite](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/auditor3.PNG?raw=true)
@@ -38,19 +33,57 @@ The Governify auditor should be present on the private tools in order to have ac
 
 Bear in mind that you might need to wait for the Governify auditor to accept the invitations in order for the points to appear in the dashboard.
 
-## Simulate golden flow
+## Join in Bluejay's system
+Follow this steps:
+1. Access to [https://join.bluejay.governify.io/?course=ISPP-2021](https://join.bluejay.governify.io/?course=ISPP-2021). This is the view for joining into the system and start the tools audition.
+
+![Join 1](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join1.PNG?raw=true)
+
+2. Enter your Repository URL. For example, `https://github.com/governifyauditor/ispp-showcase-project` would be the URL of this Repository.
+
+3. Click on Check. Once checked, any errors concerning your info.yml file will appear. Correct them if you have any. If after fixxing an error it keeps appearing wait 5 minutes before trying again.
+
+4. If no errors are found, you'll get a success message and a new section will appear. Click on Join and you should see a success message. Congrats! You successfully completed the process of joining. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
+
+## Golden flow
 Make sure that your repository files look something like this before continuing:
 
 ![Files](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/repoReady.PNG?raw=true)
 
 Now you can go ahead an simulate the Golden Flow.
 
-### New branch - Started stories correlation
-1. Create 4 stories on Pivotal Tracker by pressing the button `Add Story` on the top part of the column and click on the `Start` button on each to start them.
-2. We are going to create 4 branches on GitHub from `main` branch. First, create one with a name of your choice.
-3. Then, create 3 but this time including  in the name of the branch an ID of the four Pivotal Tracker stories created on step 1 (Check image below to see its location and the second image showing a branch name example based on the Pivotal Tracker Story ID).
+### New branch - In progress issues correlation
+1. Create a card in the "Backlog" column on Github Projects by pressing the button `+` on the top part of the column, entering a title for them and then clicking on the `Add` button. After it, convert it to issue by opening the menu, clicking on the three dots button on the right top corner of the card, and then clicking on "Convert to issue".
+2. Then, move the card to the "In progress" column.
+3. Create a branch including in the name the number of the issue you've just created on step 1 (Check image below to see its location and the second image showing a branch name example based on the Issue number).
 
-`Pivotal Tracker ID location:`
+`Issue number location:`
+
+![Issue number](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden1.PNG?raw=true)
+
+`GitHub Branch name:`
+
+![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden2.PNG?raw=true)
+
+### Open PR - Finish story
+4. Modify the branch adding some changes to it. 
+5. Move the issue to the `In review` column.
+6. Open a PR from the created branch to main.
+
+### Merge PR - Deliver story
+7. Review the PR as a team. Don't rush it (10 minutes) or it won't appear in the system.
+8. Move the issue to the `Done` column.
+9. Accept and merge the PR.
+
+//
+
+### New branch - In progress issues correlation
+1. Create 4 cards in the "Backlog" column on Github Projects by pressing the button `+` on the top part of the column, entering a title for them and then clicking on the `Add` button. After it, convert them to issues by opening the menu, clicking on the three dots button on the right top corner of the card, and then clicking on "Convert to issue".
+2. Then, move each card to the "In progress" column.
+3. We are going to create 4 branches on GitHub from `main` branch. First, create one with a name of your choice.
+4. Then, create 3 but this time including in the name of the branch the number of an issue of the ones created on step 1 (Check image below to see its location and the second image showing a branch name example based on the Issue number).
+
+`Issue number location:`
 
 ![PT ID](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden1.PNG?raw=true)
 
@@ -59,41 +92,15 @@ Now you can go ahead an simulate the Golden Flow.
 ![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden2.PNG?raw=true)
 
 ### Open PR - Finish story
-4. Modify all the new branches adding some changes to them. 
-5. Open 2 PR of the branches with the Pivotal Tracker story ID on the branch name.
-6. Create another PR using the branch that doesn't have the Pivotal Tracker story ID on it.
-7. Finish the 4 stories on Pivotal Tracker by clicking on the `Finish` button.
+5. Modify all the new branches adding some changes to them. 
+6. Move the 4 issues on Github Projects To the column `In review`.
+7. Open 2 PR of the branches with the Issue number on the branch name.
+8. Create another PR using the branch that doesn't have the Issue number on it.
 
 ### Merge PR - Deliver story
-8. First, merge one PR having the Pivotal Tracker story ID on the branch name. 
-9. Now, please check Heroku or wait 5 minutes to ensure it is deployed beforethe next step.
-10. After the first PR is deployed, merge the another PR but this time the one that its name does not contain the Pivotal Tracker story ID.
-11. Deliver the 4 stories by clicking on the `Deliver button`.
-
-## Join in Bluejay's system
-Follow this steps:
-1. Access to [https://join.bluejay.governify.io/](https://join.bluejay.governify.io/). This is the view for joining into the system and start the tools audition.
-
-![Join 1](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join1.PNG?raw=true)
-
-2. Enter your Repository URL. For example, `https://github.com/governifyauditor/ispp-showcase-project` would be the URL of this Repository.
-3. Click on Check. Once checked, any errors concerning your info.yml file will appear. Correct them if you have any. If no errors are found, you'll get a success message and a new section will appear.
-
-![Join 2](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join2.PNG?raw=true)
-
-4. In the input enter a valid course code. Click on Register. If everything is ok, you will see a success and a badge will appear aswell as a markdown for adding it to your repo's README.md file. By clicking on the badge you will access to the dashboard. If you've already registered into the system you should see a message telling you so but the dashboard badge will be given so you can access the dashboard in case you lost it.
-
-![Join 3](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join3.PNG?raw=true)
-
-The points should appear in 5 minutes or less. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
-
-## Check results
-After doing all of this, if the data has been calculated there should appear a new point for each metric:
-- At least 75% of releases must match the merge of a PR into master within ten minutes: 2/2 = 100%
-- At least 75% of Travis builds should pass correctly: This depends on whether your pipeline was successful or not. If everything passed correctly you should see 100%
-- Correlation between new branches and started stories for the whole class: 3/4 = 75%
-- Correlation between open pull request and finished stories for the whole class: 2/4 = 50%
-- Correlation between merged pull requests and delivered stories for the whole class: 1/4 = 25%
-
-The `Heroku releases` metric might have a different value if you didn't wait until a PR was deployed before merging a new one.
+9. Wait 10 minutes for the system to catch up the last correlation.
+10. Move the 4 issues on Github Projects To the column `Done`. 
+11. Now merge one PR having the Pivotal Tracker story ID on the branch name.
+12. Please check Heroku or wait 5 minutes to ensure it is deployed beforethe next step.
+13. After the first PR is deployed, merge the another PR but this time the one that its name does not contain the Issue number.
 
