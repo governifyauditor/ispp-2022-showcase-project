@@ -85,11 +85,11 @@ Now you can go ahead an simulate the Golden Flow.
 
 `Issue number location:`
 
-![PT ID](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden1.PNG?raw=true)
+![PT ID](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden21.PNG?raw=true)
 
 `GitHub Branch name:`
 
-![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden2.PNG?raw=true)
+![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden22.PNG?raw=true)
 
 ### Open PR - Finish story
 5. Modify all the new branches adding some changes to them. 
