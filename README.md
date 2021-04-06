@@ -13,6 +13,7 @@ If you already have your tools setup you can skip this part.
 
 First, you need to set up your different development tools:
  - Create Github Repository
+ - Create a GitHub Project ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/GHProjects.md))
  - Add GitHub Repository to Travis-CI and configure a simple workflow ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/Travis.md))
  - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/Heroku.md))
 
