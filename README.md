@@ -49,11 +49,11 @@ Follow this steps:
 4. If no errors are found, you'll get a success message and a new section will appear. Click on Join and you should see a success message. Congrats! You successfully completed the process of joining. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
 
 ## Golden flow
-Make sure that your repository files look something like this before continuing (not necessary to be a node.js app but travis and heroku should be configured):
+Make sure that your repository files look something like this before continuing (not mandatory to be a node.js app but travis and heroku should be configured. The file "travis.yml" and "Procfile" should be present.):
 
 ![Files](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/repoReady.PNG?raw=true)
 
-Now you can go ahead and simulate the Golden Flow.
+In order to see how the process works we are going to explain each different stage to complete a successful iteration of one feature using golden flow.
 
 ### New branch - In progress issues correlation
 1. Create a card in the "Backlog" column on Github Projects by pressing the button `+` on the top part of the column, entering a title for them and then clicking on the `Add` button. After it, convert it to issue by opening the menu, clicking on the three dots button on the right top corner of the card, and then clicking on "Convert to issue".
@@ -78,39 +78,12 @@ Now you can go ahead and simulate the Golden Flow.
 8. Move the issue to the `Done` column.
 9. Accept and merge the PR.
 
-//
-
-### New branch - In progress issues correlation
-1. Create 4 cards in the "Backlog" column on Github Projects by pressing the button `+` on the top part of the column, entering a title for them and then clicking on the `Add` button. After it, convert them to issues by opening the menu, clicking on the three dots button on the right top corner of the card, and then clicking on "Convert to issue".
-2. Then, move each card to the "In progress" column.
-3. We are going to create 4 branches on GitHub from `main` branch. First, create one with a name of your choice.
-4. Then, create 3 but this time including in the name of the branch the number of an issue of the ones created on step 1 (Check image below to see its location and the second image showing a branch name example based on the Issue number).
-
-`Issue number location:`
-
-![PT ID](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden21.PNG?raw=true)
-
-`GitHub Branch name:`
-
-![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden22.PNG?raw=true)
-
-### Open PR - Finish story
-5. Modify all the new branches adding some changes to them. 
-6. Move the 4 issues on Github Projects To the column `In review`.
-7. Open 2 PR of the branches with the Issue number on the branch name.
-8. Create another PR using the branch that doesn't have the Issue number on it.
-
-### Merge PR - Deliver story
-9. Wait 10 minutes for the system to catch up the last correlation.
-10. Move the 4 issues on Github Projects To the column `Done`. 
-11. Now merge one PR having the Pivotal Tracker story ID on the branch name.
-12. Please check Heroku or wait 5 minutes to ensure it is deployed beforethe next step.
-13. After the first PR is deployed, merge the another PR but this time the one that its name does not contain the Issue number.
-
 ## Team practices
 There are 5 TPs (Team practices) being audited:
-- In progress issues - New branch: At least 75% of in progress issues must match creation of a branch.
-- In review issues - Open PR: At least 75% of in review issues must match creation of a PR.
-- Done issues - Merge PR: At least 75% of done issues must match the merge of a PR.
-- Heoroku release - Merge PR: At least 75% of releases must match a the merge of a PR into master within ten minutes.
-- Travis successful builds: At least 80% of Travis builds should pass correctly.
+- In progress issues - New branch: At least 75% of in progress issues must match creation of a branch every time interval by the whole team.
+- In review issues - Open PR: At least 75% of in review issues must match creation of a PR every time interval by the whole team.
+- Done issues - Merge PR: At least 75% of done issues must match the merge of a PR every time interval by the whole team.
+- Heoroku release - Merge PR: At least 75% of releases must match a the merge of a PR into master within ten minutes every time interval by the whole team.
+- Travis successful builds: At least 80% of Travis builds should pass correctly every time interval by the whole team.
+
+The time interval is set to ten minutes.
