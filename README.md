@@ -6,6 +6,8 @@ Guide to simulate the golden flow and obtain metrics out of it using Governify e
 This figure shows the Golden Flow, a workflow for projects in which different teams contribute individually to a large code repository. The upstream repository is forked and each planned feature is developed by a member of the team in a separate branch. Once a feature is completed, a pull request (PR) is opened for the whole team to discuss
 the changes, and if accepted, merge the changes to the forked repository's main branch. Once merged, the main branch is deployed to the staging server for the client to validate new functionality. If the client signs off on the feature, another PR is opened to merge the changes into the main repository so the feature can be included in the production server. 
 
+All this flow is supported by different tools including deployment, CI and project management tools. In this guide three different tools for this purposes (Heroku, Travis and GitHub Projects) will be explained to correctly use them for fulfilling a set of TPs explained at the end of this document.
+
 ## Prerequisites
 
 ### Create projects and tools
