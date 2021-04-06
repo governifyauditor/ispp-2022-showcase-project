@@ -14,25 +14,25 @@ If you already have your tools setup you can skip this part.
 First, you need to set up your different development tools:
  - Create Github Repository
  - Create Pivotal Project
- - Add GitHub Repository to Travis-CI and configure a simple workflow ([Guide](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Travis.md))
- - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Heroku.md))
+ - Add GitHub Repository to Travis-CI and configure a simple workflow ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/Travis.md))
+ - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/ispp-showcase-project/blob/main/guides/Heroku.md))
 
 ### Bluejay
- - Create info.yml file. You can use this [template](https://github.com/governify/audited-project-template/blob/main/info.yml) and also take a look at this [example](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/info.yml) showing what it should look like. This file will be used by Bluejay to know the different identities of your tools to evaluate and determine the different indicators.
+ - Create info.yml file. You can use this [template](https://github.com/governify/audited-project-template/blob/main/info.yml) and also take a look at this [example](https://github.com/governifyauditor/ispp-showcase-project/blob/main/info.yml) showing what it should look like. This file will be used by Bluejay to know the different identities of your tools to evaluate and determine the different indicators.
 
 ### Governify auditor project invite
 The Governify auditor should be present on the private tools in order to have access to your information:
  - GitHub: If your repository is public or it is present on your organization there is no need to add the auditor. If not, you'll need to add him by going to Settings→Manage access on your repository and click on the green button labeled as `Invite a collaborator`. Enter `governifyauditor` and accept.
 
-![GH invite](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/auditor1.PNG?raw=true)
+![GH invite](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/auditor1.PNG?raw=true)
 
  - Pivotal Tracker: If your repository is public you don't need to add the auditor. If not, go to your project, click on members at the top and click on `Invite people`. Enter governify.auditor@gmail.com and add him.
 
-![PT invite](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/auditor2.PNG?raw=true)
+![PT invite](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/auditor2.PNG?raw=true)
 
  - Heroku: You'll need to add the auditor as a collaborator. On your app dashboard view, click on `Access` at the top and then `Add collaborator`. Enter governify.auditor@gmail.com and save changes.
 
-![H invite](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/auditor3.PNG?raw=true)
+![H invite](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/auditor3.PNG?raw=true)
 
  - Travis: You don't need to add the auditor if the repository is public. If it isn't, having the auditor on your GitHub repo is required.
 
@@ -41,7 +41,7 @@ Bear in mind that you might need to wait for the Governify auditor to accept the
 ## Simulate golden flow
 Make sure that your repository files look something like this before continuing:
 
-![Files](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/repoReady.PNG?raw=true)
+![Files](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/repoReady.PNG?raw=true)
 
 Now you can go ahead an simulate the Golden Flow.
 
@@ -52,11 +52,11 @@ Now you can go ahead an simulate the Golden Flow.
 
 `Pivotal Tracker ID location:`
 
-![PT ID](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/golden1.PNG?raw=true)
+![PT ID](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden1.PNG?raw=true)
 
 `GitHub Branch name:`
 
-![Github branch name](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/golden2.PNG?raw=true)
+![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden2.PNG?raw=true)
 
 ### Open PR - Finish story
 4. Modify all the new branches adding some changes to them. 
@@ -74,16 +74,16 @@ Now you can go ahead an simulate the Golden Flow.
 Follow this steps:
 1. Access to [https://join.bluejay.governify.io/](https://join.bluejay.governify.io/). This is the view for joining into the system and start the tools audition.
 
-![Join 1](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join1.PNG?raw=true)
+![Join 1](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join1.PNG?raw=true)
 
-2. Enter your Repository URL. For example, `https://github.com/governifyauditor/goldenflow-showcase-project` would be the URL of this Repository.
+2. Enter your Repository URL. For example, `https://github.com/governifyauditor/ispp-showcase-project` would be the URL of this Repository.
 3. Click on Check. Once checked, any errors concerning your info.yml file will appear. Correct them if you have any. If no errors are found, you'll get a success message and a new section will appear.
 
-![Join 2](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join2.PNG?raw=true)
+![Join 2](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join2.PNG?raw=true)
 
 4. In the input enter a valid course code. Click on Register. If everything is ok, you will see a success and a badge will appear aswell as a markdown for adding it to your repo's README.md file. By clicking on the badge you will access to the dashboard. If you've already registered into the system you should see a message telling you so but the dashboard badge will be given so you can access the dashboard in case you lost it.
 
-![Join 3](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join3.PNG?raw=true)
+![Join 3](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/join3.PNG?raw=true)
 
 The points should appear in 5 minutes or less. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
 
