@@ -105,3 +105,10 @@ Now you can go ahead and simulate the Golden Flow.
 12. Please check Heroku or wait 5 minutes to ensure it is deployed beforethe next step.
 13. After the first PR is deployed, merge the another PR but this time the one that its name does not contain the Issue number.
 
+## Team practices
+There are 5 TPs (Team practices) being audited:
+- In progress issues - New branch: At least 75% of in progress issues must match creation of a branch.
+- In review issues - Open PR: At least 75% of in review issues must match creation of a PR.
+- Done issues - Merge PR: At least 75% of done issues must match the merge of a PR.
+- Heoroku release - Merge PR: At least 75% of releases must match a the merge of a PR into master within ten minutes.
+- Travis successful builds: At least 80% of Travis builds should pass correctly.
