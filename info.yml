@@ -4,9 +4,9 @@ project:
   teamId: '123'
   identities:
     heroku:
-      url: 'https://goldenflow-showcase-project.herokuapp.com/'
+      url: 'https://ispp-showcase.herokuapp.com/'
     travis:
-      url: 'https://travis-ci.org/github/governifyauditor/goldenflow-showcase-project'
+      url: 'https://travis-ci.com/github/governifyauditor/ispp-showcase-project'
   members:
     member1:
       name: 'Governify'
