@@ -80,10 +80,10 @@ In order to see how the process works we are going to explain each different sta
 
 ## Team practices
 There are 5 TPs (Team practices) being audited:
-- In progress issues - New branch: At least 75% of in progress issues must match creation of a branch every time interval by the whole team.
-- In review issues - Open PR: At least 75% of in review issues must match creation of a PR every time interval by the whole team.
-- Done issues - Merge PR: At least 75% of done issues must match the merge of a PR every time interval by the whole team.
-- Heoroku release - Merge PR: At least 75% of releases must match a the merge of a PR into master within ten minutes every time interval by the whole team.
-- Travis successful builds: At least 80% of Travis builds should pass correctly every time interval by the whole team.
+- In progress issues - New branch: At least 75% of in progress issues must match creation of a branch by the whole team.
+- In review issues - Open PR: At least 75% of in review issues must match creation of a PR by the whole team.
+- Done issues - Merge PR: At least 75% of done issues must match the merge of a PR by the whole team.
+- Heoroku release - Merge PR: At least 75% of releases must match a the merge of a PR into master within ten minutes by the whole team.
+- Travis successful builds: At least 80% of Travis builds should pass correctly by the whole team.
 
-The time interval is set to ten minutes.
+Every ten minutes the TPs are computed and verified to check they are being fulfilled.
