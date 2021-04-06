@@ -47,11 +47,11 @@ Follow this steps:
 4. If no errors are found, you'll get a success message and a new section will appear. Click on Join and you should see a success message. Congrats! You successfully completed the process of joining. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
 
 ## Golden flow
-Make sure that your repository files look something like this before continuing:
+Make sure that your repository files look something like this before continuing (not necessary to be a node.js app but travis and heroku should be configured):
 
 ![Files](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/repoReady.PNG?raw=true)
 
-Now you can go ahead an simulate the Golden Flow.
+Now you can go ahead and simulate the Golden Flow.
 
 ### New branch - In progress issues correlation
 1. Create a card in the "Backlog" column on Github Projects by pressing the button `+` on the top part of the column, entering a title for them and then clicking on the `Add` button. After it, convert it to issue by opening the menu, clicking on the three dots button on the right top corner of the card, and then clicking on "Convert to issue".
@@ -66,12 +66,12 @@ Now you can go ahead an simulate the Golden Flow.
 
 ![Github branch name](https://github.com/governifyauditor/ispp-showcase-project/blob/main/img/golden22.PNG?raw=true)
 
-### Open PR - Finish story
+### Open PR - In review issues correlation
 4. Modify the branch adding some changes to it. 
 5. Move the issue to the `In review` column.
 6. Open a PR from the created branch to main.
 
-### Merge PR - Deliver story
+### Merge PR - Done issues correlation
 7. Review the PR as a team. Don't rush it (10 minutes) or it won't appear in the system.
 8. Move the issue to the `Done` column.
 9. Accept and merge the PR.
